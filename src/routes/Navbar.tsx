@@ -18,30 +18,31 @@ export const Navbar = () => {
         <React.Fragment>
             <nav className={navClass}>
                 <button 
-                    className={listClass} 
-                    onClick={toggle}
-                    >
-                        <NavLink to="/" onClick={handleClick}>
-                            <li className="navigation__item">
-                                <span>00</span>Home
-                            </li>
-                        </NavLink>
-                        <NavLink to="/dest" onClick={handleClick}>
-                            <li className="navigation__item">
-                                <span>01</span>Destination
-                            </li>
-                        </NavLink>
-                        <NavLink to="/crew" onClick={handleClick}>
-                            <li className="navigation__item">
-                                <span>02</span>Crew
-                            </li>
-                        </NavLink>
-                        <NavLink to="/tech" onClick={handleClick}>
-                            <li className="navigation__item">
-                                <span>03</span>Technology
-                            </li>
-                        </NavLink>
+                    className={btnClass} 
+                    onClick={toggle}>
                 </button>
+                <ul className={listClass}>
+                    <NavLink to="/" onClick={handleClick}
+                        className="navigation__item"
+                    >
+                        <span>00</span>Home
+                    </NavLink>
+                    <NavLink to="/dest" onClick={handleClick}
+                        className="navigation__item"
+                    >
+                        <span>01</span>Destination
+                    </NavLink>
+                    <NavLink to="/crew" onClick={handleClick}
+                        className="navigation__item"
+                    >
+                        <span>02</span>Crew
+                    </NavLink>
+                    <NavLink to="/tech" onClick={handleClick}
+                        className="navigation__item"
+                    >
+                        <span>03</span>Technology
+                    </NavLink>
+                </ul>
                 <Outlet />
             </nav>
         </React.Fragment>

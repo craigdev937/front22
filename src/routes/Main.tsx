@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { NotFound } from "../components/NotFound";
 import { Header } from "./Header";
 import { Home } from "../pages/home/Home";
-import { Destination } from "../pages/destination/Destination";
+import { Destination } from "../pages/dest/Destination";
 import { Crew } from "../pages/crew/Crew";
 import { Technology } from "../pages/tech/Technology";
 

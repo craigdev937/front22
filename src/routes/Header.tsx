@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import Logo from "@public/shared/logo.svg";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { Navbar } from "./Navbar";
 
 export const Header = () => {
@@ -15,6 +15,7 @@ export const Header = () => {
                 </section>
                 <Navbar />
             </header>
+            <Outlet />
         </React.Fragment>
     );
 };

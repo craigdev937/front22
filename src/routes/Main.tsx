@@ -39,9 +39,11 @@ const Router = createBrowserRouter([
 
 export const Main = () => {
     return (
-        <React.Fragment>
-            <RouterProvider router={Router} />
-        </React.Fragment>
+        <main className="main">
+            <React.Fragment>
+                <RouterProvider router={Router} />
+            </React.Fragment>
+        </main>
     );
 };
 
